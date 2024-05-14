@@ -1,0 +1,19 @@
+body{
+    background-image: url(./background.svg);
+    cursor: url(./alternate.png), auto;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}
+a {
+    cursor: url(./cross.png), auto;
+}
