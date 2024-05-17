@@ -1,6 +1,12 @@
+
 body{
-    background-image: url(./background.svg);
-    cursor: url(./alternate.png), auto;
+    background-color: #1f1f1f;
+    /* background-image: url(./icon/background.svg); */
+    cursor: url(./assets/alternate.png), auto;
+    font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -11,9 +17,30 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 a {
-    cursor: url(./cross.png), auto;
+    cursor: url(./assets/cross.png), auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: animatedText 5s infinite alternate-reverse;
+}
+
+
+
+@keyframes animatedText {
+    to {
+        background-position: 100%;
+    }
 }
